@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Natural Photography</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="CSS/mystyle.css">
+<meta name="viewport" content="width=device-width", initial-scale=1.0>
+<link rel="stylesheet" href="css/zigZagTimeLine.css">
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+        <style>
+        #newsflex{
+            display: flex;
+            flex-direction: row;
+            background-color: aqua;
+        }
+        #flex1{
+            background-color:aqua;
+            order: 1;
+            padding: 10px;
+            flex:1;
+        }
+        #flex2{
+            background-color:lightslategrey;
+            order: 2;
+            padding: 10px;
+            flex:1;
+        }
+        #flex3{
+            background-color:chartreuse;
+            order: 3;
+            padding: 10px;
+            flex:1;
+        }
+        #flex4{
+            background-color:darkkhaki;
+            order: 4;
+            padding: 10px;
+            flex:1;
+        }
+        
+        @media(max-width:600px){
+            #newsflex{
+            flex-direction: column;
+            }}
+            #flex1 #flex2 #flex3 #flex4{
+                flex: 1;
+                padding: 0;
+            }
+    </style>
+</head>
+<body>
+<main>
+<section id="landing">
+<div id="top-menu">
+    <div class="logo">
+        <img src="images/photography-logo-design-27.png">
+    </div>
+<!--     this div is for the text and buttons       -->
+<div id="landing-text">
+<h1>Natual Photography</h1>
+<h2>Beautiful natuarl scenes...</h2>
+<!--     this div is for menus/buttons       -->
+<div id="menuBtn">
+<a href="#portfolio" class="btn1">Portfolio</a>
+<a href="#experience" class="btn1">Experience</a>
+<a href="#news" class="btn1">News</a>
+<a href="#contact" class="btn1">Contact</a>
+</div>
+</div>
+</div> 
+<div id="landing-image">
+</div>
+</section>
+<section id="portfolio">
+<div class="header">
+<h2>Our Work</h2>
+</div>
+    
+<!-- Grid row -->
+<div class="row">
+
+  <!-- Grid column -->
+  <div class="col-md-12 d-flex justify-content-center mb-5">
+
+    <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="all">All</button>
+    <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="1">Mountains</button>
+    <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="2">Sea</button>
+
+  </div>
+  <!-- Grid column -->
+
+</div>
+<!-- Grid row -->
+
+<!-- Grid row -->
+<div class="gallery" id="gallery">
+
+  <!-- Grid column -->
+  <div class="mb-3 pics animation all 2">
+    <img class="img-fluid" src="images/lake.jpg" alt="Card image cap">
+  </div>
+  <!-- Grid column -->
+
+  <!-- Grid column -->
+  <div class="mb-3 pics animation all 1">
+    <img class="img-fluid" src="images/moutainField.jpg" alt="Card image cap">
+  </div>
+  <!-- Grid column -->
+
+  <!-- Grid column -->
+  <div class="mb-3 pics animation all 1">
+    <img class="img-fluid" src="" alt="Card image cap">
+  </div>
+  <!-- Grid column -->
+
+  <!-- Grid column -->
+  <div class="mb-3 pics animation all 2">
+    <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg" alt="Card image cap">
+  </div>
+  <!-- Grid column -->
+
+  <!-- Grid column -->
+  <div class="mb-3 pics animation all 2">
+    <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg" alt="Card image cap">
+  </div>
+  <!-- Grid column -->
+
+  <!-- Grid column -->
+  <div class="mb-3 pics animation all 1">
+    <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Vertical/mountain3.jpg" alt="Card image cap">
+  </div>
+  <!-- Grid column -->
+
+</div>
+<!-- Grid row -->
+    
+</section>
+<!--        This is the end of the portforlio  -->    
+<section id="experience">
+<div class="header">
+<h2>Experience</h2>   
+</div>
+<div class="demo">
+<div class="container">
+<h4>Timeline Style : Demo-6</h4>
+<div class="row">
+<div class="col-md-12">
+<div class="main-timeline6">
+<div class="timeline">
+<div class="timeline-content">
+    <span class="year">2018</span>
+    <div class="content-inner">
+        <span class="icon"><i class="fa fa-globe"></i></span>
+        <h3 class="title">Web Designer</h3>
+        <p class="description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer malesuada tellus lorem, et condimentum neque commodo quis. Quisque eu ornare risus, vitae fermentum eros. Etiam venenatis ac.
+        </p> 
+    </div>
+</div>
+</div>
+<div class="timeline">
+<div class="timeline-content">
+    <span class="year">2017</span>
+    <div class="content-inner">
+        <span class="icon"><i class="fa fa-rocket"></i></span>
+        <h3 class="title">Web Developer</h3>
+        <p class="description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer malesuada tellus lorem, et condimentum neque commodo quis. Quisque eu ornare risus, vitae fermentum eros. Etiam venenatis ac.
+        </p>
+    </div>
+</div>
+</div>
+<div class="timeline">
+<div class="timeline-content">
+    <span class="year">2016</span>
+    <div class="content-inner">
+        <span class="icon"><i class="fa fa-briefcase"></i></span>
+        <h3 class="title">Web Designer</h3>
+        <p class="description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer malesuada tellus lorem, et condimentum neque commodo quis. Quisque eu ornare risus, vitae fermentum eros. Etiam venenatis ac.
+        </p>
+    </div>
+</div>
+</div>
+<div class="timeline">
+<div class="timeline-content">
+    <span class="year">2015</span>
+    <div class="content-inner">
+        <span class="icon"><i class="fa fa-mobile"></i></span>
+        <h3 class="title">Web Developer</h3>
+        <p class="description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer malesuada tellus lorem, et condimentum neque commodo quis. Quisque eu ornare risus, vitae fermentum eros. Etiam venenatis ac.
+        </p>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="news">
+<div class="header">
+<h2>News</h2>
+</div>
+
+<!--
+<article class="block">
+<h4>Ohio Bald Eagle Population Has Made ‘Thrilling’ Recovery Since Numbering Just Four Nests During the 70s</h4>
+<p>Despite being the official mascot of the United States, there were only 4 bald eagle nests recorded across the state of Ohio as recently as 1979.
+</p>
+<a href="https://www.goodnewsnetwork.org/ohio-bald-eagle-population-has-made-thrilling-recovery-since-numbering-just-four-nests-during-the-70s/">Read more here</a>
+</article>
+
+<article class="block">
+<h4>Company Collects 80% of City’s Recyclable Plastics and Turns It All into Lumber</h4>
+<p>This trailblazing Canadian company is building a new standard for sustainability since they started recycling the bulk of their municipal plastic waste into lumber.</p>
+<a href="https://www.goodnewsnetwork.org/ohio-bald-eagle-population-has-made-thrilling-recovery-since-numbering-just-four-nests-during-the-70s/">Read more here</a>
+</article>
+
+<article class="block">
+<h4>Stormy weather across England causes damage
+</h4>
+<p>Damage ranging from roofs being blown off to fallen trees is being cleared by emergency services after strong winds battered parts of the country.
+A high street in Slough, Berkshire, remains closed after a large section of a roof was blown off a block of flats.
+</p>
+<a href="https://www.bbc.co.uk/news/av/embed/p080d0cs/51117465">Read more here</a>
+</article>
+-->
+<div id="newsflex">
+            <div id="flex1">
+                <h1>1st flexbox</h1>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+            </div>
+            <div id="flex2">
+                <h1>2nd flexbox</h1>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+            </div>
+            <div id="flex3">
+                <h1>3rd flexbox</h1>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+            </div>
+            <div id="flex4">
+                <h1>4th flexbox</h1>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+            </div>
+           
+        </div>
+</section>
+
+<section id="contact">
+<div class="header">
+<h2>Contact</h2>
+</div>
+<div id="formdiv">
+<form action="mailto:sjzhang100@gmail.com method="post enctype="text/plain" class="myForm">
+
+
+<label>Name:</label>
+<input type="text" name="name" required>
+<label>ID:</label>
+<input type="number" name="ID" required>
+<br>
+<label>Gender:</label>
+Female:<input type="radio" name="gender" value="female" >
+Male:<input type="radio" name="gender" value="male" >
+Other:<input type="radio" name="gender" value="other" >      
+<br>
+<label>Mobile:</label>
+<input type="tel" name="mobile" required>
+<br>
+<label>Phone:</label>
+<input type="tel" name="phone">
+<br>
+<label>Email:</label>
+<input type="email" name="email" required>
+<br>
+<label>Message:</label>
+<textarea name="message"></textarea>
+<br>
+<input type="submit" value="Submit" class="btn1">
+
+</form>
+</div>
+<div id="addressdiv">
+<address>
+JustIT Training <br>
+2nd Floor, St Clares <br>
+London, EC3N 1DD <br>
+email:<a href="mailto:info@justit.co.uk"> info@justit.co.uk
+</a><br>
+Phone:<a href="tel:516584354">516584354</a>
+</address>
+</div>
+</section>
+</main>
+
+
+<div class="fixed">
+
+<a href="#landing" class="btn1">Home</a>
+
+</div>
+    
+<div class="clear" >
+<footer >
+<p style="text-align: center; ">&copy; Just IT Training and apprentiship</p>
+</footer>
+</div>
+
+</body>
+</html>
