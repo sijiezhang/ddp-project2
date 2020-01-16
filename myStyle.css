@@ -83,6 +83,9 @@ h2{
     padding: 10px;
     text-align: center;
 }
+#ourwork{
+    
+}
 
 img{
     display: block;
@@ -136,7 +139,7 @@ padding: 5px;
 
 
 #formDiv{
-width: 75%;
+width: 100%;
 float: left;
 }
 
@@ -179,17 +182,18 @@ padding: 10px;
     text-align: center;
 }
     
- #landing-text h1{
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    margin: 0;
+     #landing-text h1{
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        margin: 0;
 }
     
-#landing-text h2{
-    font-size: 1rem;
-    text-transform: uppercase;
-    color: black;
-    }
+    #landing-text h2{
+        font-size: 1rem;
+        text-transform: uppercase;
+        color: black;
+        }
+    
     #btn1{
         border:1px #ccc solid;
     padding: 0.5rem 0.5rem;
@@ -200,6 +204,10 @@ padding: 10px;
     text-decoration: none;
     transition: background 1200ms ease;
         
+    }
+    #menuBtn{
+        padding-top: 10px;
+        font-size: 0.5rem !important;
     }
 
 }
