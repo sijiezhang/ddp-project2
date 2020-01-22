@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h2>A random number</h2>
+
+    <button onclick="country1()" name="button">Capitals</button>
+    <!-- <button onclick="country1()">Hi :)</button> -->
+    <p id="demo">Waiting for input...</p>
+
+    <script type="text/javascript">
+
+      window.addEventListener("load", country1, false);
+
+      function country1(){
+    //  var whatCity = prompt("What is your city?").toLowerCase();
+      var country;
+
+      switch (whatCity) {
+        case "london":
+          country = "UK";
+
+          break;
+        case "berlin":
+          country = "Germany";
+
+          break;
+        case "capetown":
+          country = "South Africa";
+
+          break;
+        case "beijing":
+          country = "China";
+
+          break;
+        case "tokyo":
+          country = "Japan";
+
+          break;
+        case "madrid":
+          country = "Spain";
+
+          break;
+        default:
+          country="Not known";
+      }
+
+      document.getElementById("demo").innerHTML = country;
+      }
+
+    </script>
+  </body>
+</html>

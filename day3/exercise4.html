@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<link rel="javascript" href="exercise3.js" >
+<title></title>
+</head>
+<body>
+    <style>
+        body{
+            text-align: center;
+            background-repeat: no-repeat;
+            background-position: left;
+            background-size: auto;
+            background-color: white;
+        }
+        #container{
+            margin:0 auto;
+            width:80%;
+            height: 60%;
+            
+        }
+    </style>
+    <div id="container">
+   
+    <h1>Reg Expressions</h1>
+    <p>Original string: "JavaScript is fun."</p>
+    JS Expression position for 'fun': <p id="demo1"></p>
+    JS Expression replace str: <p id="demo2"></p>
+    
+    <hr>
+    <h2>Example of g and i modifiers</h2>
+    <p id="global"></p>
+    
+        
+        
+    <hr>
+        
+    <input type="text" id="input1">
+    <input type="button" value="Check number" onclick="checkNumber()">
+        
+    </div>
+    
+    <script>
+        var str = "Javascript is fun. .fun";
+        var n = str.search(/fun/ig);
+        document.getElementById('demo1').innerHTML=n;
+        var repl = str.replace("fun","challenging");
+        document.getElementById('demo2').innerHTML = repl;
+    </script>
+    
+    
+    
+    <script>
+    var str = "Welcome to the Javascript training";
+    var ptrn = /a/g;
+    var result = str.match(ptrn);
+    document.getElementById('global').innerHTML = result;
+    </script>
+    <div id="catch"> </div>
+    <div id="finally"> </div>
+    <script>
+        
+        try
+            {
+                alert("Welcome to JS");
+            }
+        catch(er)
+            {
+                document.getElementById('catch').innerHTML=er.message;
+            }
+    function checkNumber()
+        {
+            var userInput =
+                document.getElementById('input1').value;
+        
+            var reg = /^\d+$/;
+                var inputs = userInput.search(reg);
+            if(userInput.search(reg) == 0)
+            {
+            alert("It is a number"+inputs);
+            }
+            else if(userInput=="")
+            {
+            alert("the box is empty.");    
+            }
+            else
+            {
+            alert("it is not a number"+inputs);    
+            }
+        }
+    </script>
+</body>
+</html>

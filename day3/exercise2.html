@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Time</title>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <style media="screen">
+    </style>
+
+    <h1>Arrays in JS</h1>
+    <div id="students"></div>
+    <ul id="list">
+    </ul>
+
+
+    <h3>after adding new items</h3>
+    <div id="newArray"></div>
+    <input type="text" id="input1" value="qew">
+    <input type="text" id="input2" value="eqw">
+    <input type="text" id="input3" value="ewq">
+    <input type="button" value="Add to array" onclick="myArray(input1.value,input2.value,input3.value)">
+
+    <script type="text/javascript">
+
+      var students=["Jason","Super Santi","Cerny", 23, 33, 33];
+
+      for(var i=0; i<students.length; i++)
+      {
+        document.getElementById('list').innerHTML +="<li>" + students[i] + "</li>";
+      }
+
+      var text = "";
+      for (var i = 0; i < students.length; i++) {
+        text+="<li>" +students[i]+"</li>";
+      }
+      text+="</ul>";
+        document.getElementById('students').innerHTML += text;
+
+        function myArray(a,b,c)
+        {
+          // document.getElementById('newArray').innerHTML = "";
+          students.push(a,b,c);
+
+          for(var i=0; i<students.length; i++)
+          {
+            document.getElementById('newArray').innerHTML +="<li>" + students[i] + "</li>";
+          }
+        }
+    </script>
+
+  </body>
+</html>

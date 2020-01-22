@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <style media="screen">
+      body{
+        text-align:center;
+        font-size: 24px;
+      }
+
+    </style>
+
+    <div class="inputs">
+      <h3>Enter a value and choose a loop</h3>
+      <label for="input1">Enter an initial value</label>
+      <input type="number" id="input1">
+      <label for="input1">Enter an end value</label>
+      <input type="number" id="input2">
+      <label for="input1">Enter an increment value</label>
+      <input type="number" id="input3">
+    </div>
+
+
+    <span class="btns">
+      <button type="button" name="button" onclick="_for(input1.value, input2.value, input3.value)">for</button>
+      <button type="button" name="button" onclick="_while(input1.value, input2.value, input3.value)">_while</button>
+      <button type="button" name="button" onclick="do_while(input1.value, input2.value, input3.value)">do_while</button>
+    </span>
+    <div id="loopresult"></div>
+
+    <script type="text/javascript">
+
+      function _for(a,b,c)
+      {
+        a = parseInt(a);
+        b = parseInt(b);
+        c = parseInt(c);
+        document.getElementById('loopresult').innerHTML = "";
+        for(a;a<b;a+=c){
+        document.getElementById('loopresult').innerHTML +=  a + " "; //or"<br>"
+        }
+      }
+
+      function do_while(a,b,c)
+      {
+        a = parseInt(a);
+        b = parseInt(b);
+        c = parseInt(c);
+        document.getElementById('loopresult').innerHTML = "";
+        do{
+          document.getElementById('loopresult').innerHTML += a + " ";
+          a+=c;
+      }while(a<=b)
+      }
+
+      function _while(a,b,c){
+        a = parseInt(a);
+        b = parseInt(b);
+        c = parseInt(c);
+      document.getElementById('loopresult').innerHTML = "";
+      while(a<b){
+        document.getElementById('loopresult').innerHTML += a + " ";
+        a+=c;
+      }
+    }
+    </script>
+  </body>
+</html>

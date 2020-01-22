@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <style>
+    
+        body{
+            text-align: center;
+            background-color:cornflowerblue;
+            background-image: url(image/mathematics-1579620437666-1894.jpg)
+        }
+        span{
+            margin-top: 20px;
+            display: inline-flex;
+        }
+        
+        h1{
+            color: lawngreen;
+        }
+        input{
+            box-shadow: 3px 3px white;
+            margin: 10px;
+        }
+        
+        p{
+            color: white;
+        }
+        
+    </style>
+    
+    <h1>Calculator</h1>
+    <h3>Add, Substract, Multiply, Divide...</h3>
+    <div>
+    <input type="number" id="input1"><br>
+    <p id="showsign1"></p>
+    <input type="number" id="input2"><br>
+    <p id="showsign2"></p>
+    <input type="number" id="input3"><br>
+<!--    <input type="number" id="input3"><br>-->
+        <span id="result">
+            <input type="button"  onclick="changesign('+')" value="Sum"><br>
+            <input type="button"  onclick="changesign('-')" value="Subtract"><br>
+            <input type="button"  onclick="changesign('*')" value="Multiply"><br>
+            <input type="button"  onclick="changesign('/')" value="Divide"><br>
+        </span>
+        <div id="calculate">
+            <input type="button"  onclick="main1()" value="Divide"><br>
+            
+        </div>
+    </div>
+    <p>Result:</p>
+    <p id="output"></p>
+    <script>
+        function changesign(z){
+            if(document.getElementById('showsign1')===null){
+               document.getElementById('showsign1').innerHTML = z;
+               }
+            else if(document.getElementById('showsign1')!=null && document.getElementById('showsign2')===null){
+                document.getElementById('showsign1').innerHTML = z;    
+            }
+            else{
+                alert("something went wrong")
+            }
+        }
+        
+        function main1(sign){
+        var number1 = parseInt(input1.value);
+        var number2 = parseInt(input2.value);
+        var number3 = parseInt(input3.value);
+       
+//        document.getElementById('output').innerHTML = result; 
+        var result = calculate(number1, number2, number3, sign1, sign2);
+        document.getElementById('output').innerHTML = result;
+            
+        if(document.getElementById('showsign1')===null){
+        document.getElementById('showsign1').innerHTML = z;
+        }
+        else if(document.getElementById('showsign1')!=null && document.getElementById('showsign2')===null){
+        document.getElementById('showsign2').innerHTML = z;
+        }
+        function calculate(x, y, z, ){
+            
+            switch (z){
+                   
+                case "+":
+                return (x+y);
+                break;
+                    
+                case "-":
+                return (x-y);
+                break;   
+                    
+                case "*":
+                return (x*y);
+                break; 
+                    
+                case "/":
+                return (x/y);
+                break;
+                    
+                default:
+                return null;
+                    
+                }
+
+        }
+        
+        
+            
+ 
+        }
+        
+//        var sum = number1+number2+number3;
+//        document.getElementById('output').innerHTML = sum;        
+//    }
+//   function main2(){
+//        var number1 = parseInt(input1.value);
+//        var number2 = parseInt(input2.value);
+//        var number3 = parseInt(input3.value);           
+//        var sum = number1-number2-number3;
+//        document.getElementById('output').innerHTML = sum;        
+//    }
+//        
+//    function main3(){
+//        var number1 = parseInt(input1.value);
+//        var number2 = parseInt(input2.value);
+//        var number3 = parseInt(input3.value);
+//        var sum = number1*number2*number3;
+//        document.getElementById('output').innerHTML = sum;        
+//    }
+//    function main4(){
+//        var number1 = parseInt(input1.value);
+//        var number2 = parseInt(input2.value);
+//        var number3 = parseInt(input3.value);
+//        var sum = number1/number2/number3;
+//        document.getElementById('output').innerHTML = sum;        
+//    }
+        
+    </script>
+</body>
+
+
+
+
+</html>

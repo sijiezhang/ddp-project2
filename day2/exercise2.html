@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head> 
+    <meta charset="utf-8">
+</head>
+<body>
+    
+    <div style="text-align: center;">
+    <img id='diceimg'  src="image\Alea_3.png">
+    </div>
+    
+    <button onclick="rollDice()" name="button" style="margin-left: 50%;">Click</button>
+        
+    <script type="text/javascript">
+
+        
+    var myimage = new Image(document.getElementById('diceimg'));
+    window.addEventListener("load",rollDice(number),false);
+    var source;
+    
+    function rollDice(){
+    var number = Math.ceil((Math.random()*6));
+    
+        var img3 = "image/Alea_" + number + ".png";
+    switch (number){
+        case 1:
+            source = img3;
+            break;
+        case 2:
+            source = img3;
+            break;
+        case 3:
+            source = img3;
+            break;
+        case 4:
+            source = img3;
+            break;
+        case 5:
+            source = img3;
+            break;
+        case 6:
+            source = img3;
+            break;
+        default:
+            source = img3;
+    }
+        
+    document.getElementById("diceimg").src = source;
+    }
+
+    </script>
+</body>
+</html>

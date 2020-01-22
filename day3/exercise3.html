@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="javascript" href="exercise3.js" >
+    <title></title>
+  </head>
+  <body>
+
+<!--
+    <style media="screen">
+      body{
+        text-align:center;
+        color:rgb(10,12,133);
+      }
+      input{
+        padding:5px;
+        margin:5px;
+      }
+    </style>
+-->
+
+    <div class="">
+      <h1>Enter your city</h1>
+      <input type="text" id="city" value="manchester">
+      <input type="button" name="" value="Submit" onclick="checkCity(city.value), matchCountry(city)">
+      <input type="button" name="" value="Displpay all cities" onclick="displayCities()" >
+    </div>
+    <div id="result">
+      <p id="position1"></p>
+      <p id="list"></p>
+    </div>
+    <script type="text/javascript">
+
+      var cities = ["london", "paris", "berlin", "manchester", "dublin", "washington", "shanghai", "tokyo", "new york"];
+        
+      var cityexist = false;
+
+      function checkCity(city)
+      {
+        for (var i = 0; i < cities.length; i++)
+        {
+          if (city.toLowerCase()==cities[i]) {
+             cityexist = true;
+          }
+        }
+          if(cityexist){
+            document.getElementById('position1').innerHTML = "Your city is at position: " + cities.indexOf(city);
+          }
+      }
+
+      function displayCities()
+      {
+        var text = "";
+        for (var i = 0; i < cities.length; i++) {
+          text +=  cities[i].toUpperCase() + ",  ";
+        }
+        document.getElementById('list').innerHTML = text ;
+      }
+
+        
+
+       var country = "";
+       function matchCountry(city1){
+        var  city = city1.toLowerCase;
+         if (cityexist == true) {
+             switch (city) {
+             case "london","manchester":
+             country = "UK";
+             break;
+             case "berlin":
+             country = "Germany";
+             break;
+             case "dublin":
+             country = "North Ireland";
+             break;
+             case "washington","new york":
+             country = "USA";
+             break;
+             case "shanghai":
+             country = "China";
+             break;
+             case "tokyo":
+             country = "Japan";
+             break;
+             default:
+             country="Your country doesn't exist in the list";
+           }
+         }
+        document.getElementById('position1').innerHTML += " You are from" + country; 
+       }
+    </script>
+
+  </body>
+</html>

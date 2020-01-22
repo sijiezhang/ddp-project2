@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Error handling</title>    
+</head>
+<body>
+<div id="catch"> </div>
+<div id="finally"> </div>
+<script>
+
+    try
+        {
+            alert("Welcome to JS");
+        }
+    catch(er)
+        {
+            document.getElementById('catch').innerHTML=er.message;
+        }
+    
+    
+</script>  
+    <hr>
+    Please enter an number between 5 and 10:<input type="text" id="input1">
+    <input type="button" onclick="validation()" value="Validate Input">
+    <p id="message"></p>
+<script>
+    function validation(){
+    var x = document.getElementById('input1').value;
+    try
+    {
+        if(x=="") throw "empty box....";
+        if(isNaN(x)) throw "It is not a number";
+        if(x>=5 && x<=10) throw ("Correct range of number");
+        if(x<5) throw ("It is less than 5.");
+        if(x>10) throw ("It is greater than 5.");
+       
+    }
+    catch(err)
+    {
+        document.getElementById('message').innerHTML = "your input is: " + err;
+    }
+}
+</script>
+</body>
+</html>
